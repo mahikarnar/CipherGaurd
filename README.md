@@ -2,7 +2,7 @@
 
 A comprehensive password analysis tool built with Python, Gradio, and machine learning techniques. This tool provides real-time password strength assessment, breach detection, and security recommendations.
 
-## Features
+## ⚔️ Features
 
 ### Core Analysis
 - **Advanced Strength Scoring**: 0-100 scale based on multiple factors
@@ -31,7 +31,7 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
 - **Django Integration**: API endpoints for web applications
 - **Reverse Proxy**: Nginx configuration with SSL termination
 
-## Quick Start
+## ⚔️ Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -76,7 +76,7 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
    docker-compose up -d
    ```
 
-## API Documentation
+## ⚔️ API Documentation
 
 ### Analyze Password Endpoint
 
@@ -108,7 +108,7 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
 - **Limit**: 20 requests per minute per IP
 - **Response**: 429 Too Many Requests when exceeded
 
-## Configuration
+## ⚔️ Configuration
 
 ### Environment Variables
 
@@ -133,7 +133,7 @@ interface.launch(
 )
 ```
 
-## Security Considerations
+## ⚔️ Security Considerations
 
 ### Data Protection
 - **No Password Storage**: Passwords are never saved to disk or logs
@@ -152,7 +152,7 @@ interface.launch(
 - **Input Validation**: Strict input sanitization
 - **Error Handling**: No sensitive information in error messages
 
-## Monitoring and Logging
+## ⚔️ Monitoring and Logging
 
 ### Health Checks
 ```bash
@@ -170,7 +170,7 @@ curl -f http://localhost:7860/health
 - **WARN**: Rate limiting, API timeouts
 - **ERROR**: System errors, API failures
 
-## Cloud Deployment
+## ⚔️ Cloud Deployment
 
 ### AWS ECS
 ```bash
@@ -211,7 +211,7 @@ kubectl apply -f k8s-deployment.yaml
 kubectl apply -f k8s-ingress.yaml
 ```
 
-## Testing
+## ⚔️ Testing
 
 ### Unit Tests
 ```bash
@@ -233,7 +233,7 @@ ab -n 1000 -c 10 -p test_password.json -T application/json \
 wrk -t12 -c400 -d30s --script=post_password.lua http://localhost:7860/
 ```
 
-## Troubleshooting
+## ⚔️ Troubleshooting
 
 ### Common Issues
 
@@ -258,4 +258,5 @@ logging.basicConfig(level=logging.DEBUG)
 # Launch with debug
 interface.launch(debug=True, show_error=True)
 ```
+
 
