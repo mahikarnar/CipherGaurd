@@ -1,6 +1,6 @@
-# Cipher Gaurd
+# *Cipher Gaurd* 
 
-A comprehensive password analysis tool built with Python, Gradio, and machine learning techniques. This tool provides real-time password strength assessment, breach detection, and security recommendations.
+Python-based password security analyzer featuring Shannon entropy, k-anonymity breach detection via HIBP API, and Gradio UI This tool provides real-time password strength assessment, breach detection, and security recommendations.
 
 ## ⚔️ Features
 
@@ -258,5 +258,6 @@ logging.basicConfig(level=logging.DEBUG)
 # Launch with debug
 interface.launch(debug=True, show_error=True)
 ```
+
 
 
