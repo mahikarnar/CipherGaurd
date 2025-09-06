@@ -42,8 +42,8 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/password-analyzer.git
-   cd password-analyzer
+   git clone https://github.com/yourusername/CipherGaurd.git
+   cd CipherGaurd
    ```
 
 2. **Install dependencies**
@@ -63,12 +63,12 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
 
 1. **Build the image**
    ```bash
-   docker build -t password-analyzer .
+   docker build -t CipherGaurd .
    ```
 
 2. **Run the container**
    ```bash
-   docker run -p 7860:7860 password-analyzer
+   docker run -p 7860:7860 CipherGaurd
    ```
 
 3. **Or use Docker Compose**
@@ -80,7 +80,7 @@ A comprehensive password analysis tool built with Python, Gradio, and machine le
 
 ### Analyze Password Endpoint
 
-**POST** `/api/analyze-password/`
+**POST** `/api/CipherGaurd/`
 
 **Request Body:**
 ```json
@@ -179,7 +179,7 @@ curl -f http://localhost:7860/health
 
 # Deploy with CloudFormation
 aws cloudformation deploy --template-file aws-template.yaml \
-  --stack-name password-analyzer --capabilities CAPABILITY_IAM
+  --stack-name CipherGaurd --capabilities CAPABILITY_IAM
 ```
 
 ### Google Cloud Run
@@ -188,7 +188,7 @@ aws cloudformation deploy --template-file aws-template.yaml \
 ./deploy-gcp.sh
 
 # Configure custom domain
-gcloud run domain-mappings create --service password-analyzer \
+gcloud run domain-mappings create --service CipherGaurd \
   --domain your-domain.com
 ```
 
@@ -199,7 +199,7 @@ gcloud run domain-mappings create --service password-analyzer \
 
 # Configure custom domain
 az network dns record-set cname create -g myResourceGroup \
-  -z your-domain.com -n app --cname password-analyzer.eastus.azurecontainer.io
+  -z your-domain.com -n app --cname CipherGaurd.eastus.azurecontainer.io
 ```
 
 ### Kubernetes
@@ -215,7 +215,7 @@ kubectl apply -f k8s-ingress.yaml
 
 ### Unit Tests
 ```bash
-python -m pytest tests/test_password_analyzer.py -v
+python -m pytest tests/test_Cipher_Gaurd.py -v
 ```
 
 ### Integration Tests
@@ -258,3 +258,4 @@ logging.basicConfig(level=logging.DEBUG)
 # Launch with debug
 interface.launch(debug=True, show_error=True)
 ```
+
