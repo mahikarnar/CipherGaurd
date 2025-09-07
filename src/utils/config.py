@@ -161,8 +161,6 @@ class Config:
             'share': self.share,
             'debug': self.debug,
             'show_error': True,
-            'show_tips': not self.debug,
-            'enable_queue': True,
             'max_threads': self.max_threads,
         }
         
